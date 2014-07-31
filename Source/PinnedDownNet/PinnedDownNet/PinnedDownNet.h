@@ -8,5 +8,5 @@ enum PinnedDownPacketType
 struct PinnedDownPacket
 {
 	PinnedDownPacketType packetType;
-	int dataSize;
+	unsigned int dataSize;
 };
