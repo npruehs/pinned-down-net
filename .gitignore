@@ -19,3 +19,8 @@
 *.exe
 *.out
 *.app
+Source/PinnedDownNet/PinnedDownNet/Debug/
+Source/PinnedDownNet/PinnedDownNet/Release/
+Source/PinnedDownNet/PinnedDownNet.opensdf
+Source/PinnedDownNet/PinnedDownNet.sdf
+Source/PinnedDownNet/PinnedDownNet.v11.suo
