@@ -1,12 +1,35 @@
 #pragma once
 
-enum PinnedDownPacketType
+enum ServerEventType
 {
 	LoginSuccess
 };
 
-struct PinnedDownPacket
+enum ClientActionType
 {
-	PinnedDownPacketType packetType;
-	unsigned int dataSize;
+	SelectCard
+};
+
+struct ServerEvent
+{
+	ServerEvent() { }
+
+	ServerEvent(ServerEventType eventType)
+	{
+		this->eventType = eventType;
+	}
+
+	ServerEventType eventType;
+};
+
+struct ClientAction
+{
+	ClientAction() { }
+
+	ClientAction(ClientActionType actionType)
+	{
+		this->actionType = actionType;
+	}
+
+	ClientActionType actionType;
 };
