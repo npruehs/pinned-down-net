@@ -16,6 +16,11 @@ namespace PinnedDownNet
 			{
 				return LoginSuccessEventType;
 			}
+
+			const NetRole GetNetRole() const
+			{
+				return NetRole::Client;
+			}
 		};
 	}
 }

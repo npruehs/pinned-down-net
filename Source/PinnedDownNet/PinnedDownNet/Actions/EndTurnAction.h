@@ -16,6 +16,11 @@ namespace PinnedDownNet
 			{
 				return EndTurnActionType;
 			}
+
+			const NetRole GetNetRole() const
+			{
+				return NetRole::Server;
+			}
 		};
 	}
 }
