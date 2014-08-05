@@ -49,6 +49,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\pinned-down-core\Source\PinnedDownCore\PinnedDownCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -73,10 +74,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Actions\EndTurnAction.h" />
+    <ClInclude Include="Events\LoginSuccessEvent.h" />
     <ClInclude Include="PinnedDownNet.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Actions\EndTurnAction.cpp" />
+    <ClCompile Include="Events\LoginSuccessEvent.cpp" />
     <ClCompile Include="PinnedDownNet.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\pinned-down-core\Source\PinnedDownCore\PinnedDownCore\PinnedDownCore.vcxproj">
+      <Project>{51037f52-f903-4bb2-90cd-70b5bde869de}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
