@@ -16,6 +16,9 @@
     <ClInclude Include="Actions\EndTurnAction.h">
       <Filter>Actions</Filter>
     </ClInclude>
+    <ClInclude Include="Events\CoveredDistanceChangedEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -24,6 +27,9 @@
     </ClCompile>
     <ClCompile Include="Actions\EndTurnAction.cpp">
       <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp">
+      <Filter>Events</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

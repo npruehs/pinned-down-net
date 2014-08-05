@@ -75,11 +75,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Actions\EndTurnAction.h" />
+    <ClInclude Include="Events\CoveredDistanceChangedEvent.h" />
     <ClInclude Include="Events\LoginSuccessEvent.h" />
     <ClInclude Include="PinnedDownNet.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Actions\EndTurnAction.cpp" />
+    <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp" />
     <ClCompile Include="Events\LoginSuccessEvent.cpp" />
     <ClCompile Include="PinnedDownNet.cpp" />
   </ItemGroup>
