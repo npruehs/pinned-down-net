@@ -28,6 +28,9 @@
     <ClInclude Include="Events\TurnPhaseChangedEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
+    <ClInclude Include="Events\VictoryEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -41,6 +44,9 @@
       <Filter>Events</Filter>
     </ClCompile>
     <ClCompile Include="Events\TurnPhaseChangedEvent.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\VictoryEvent.cpp">
       <Filter>Events</Filter>
     </ClCompile>
   </ItemGroup>
