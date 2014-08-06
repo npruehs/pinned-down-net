@@ -7,6 +7,9 @@
     <Filter Include="Actions">
       <UniqueIdentifier>{8cc09cda-5075-4931-a6a1-20c845cac968}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{af29602e-ec98-415d-b9d0-71e29a5dd7f7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PinnedDownNet.h" />
@@ -19,6 +22,12 @@
     <ClInclude Include="Events\CoveredDistanceChangedEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
+    <ClInclude Include="Data\TurnPhase.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\TurnPhaseChangedEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -29,6 +38,9 @@
       <Filter>Actions</Filter>
     </ClCompile>
     <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\TurnPhaseChangedEvent.cpp">
       <Filter>Events</Filter>
     </ClCompile>
   </ItemGroup>
