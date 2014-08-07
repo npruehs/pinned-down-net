@@ -65,6 +65,9 @@
     <ClInclude Include="Data\Cards\CardSetPremiere.h">
       <Filter>Data\Cards</Filter>
     </ClInclude>
+    <ClInclude Include="Events\CardCreatedEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -100,6 +103,9 @@
     </ClCompile>
     <ClCompile Include="Data\Cards\CardSetPremiere.cpp">
       <Filter>Data\Cards</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\CardCreatedEvent.cpp">
+      <Filter>Events</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
