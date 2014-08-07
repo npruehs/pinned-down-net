@@ -33,8 +33,8 @@ namespace PinnedDownNet
 
 			explicit CardCreatedEvent(Entity serverEntity, int setIndex, int cardIndex)
 			{
-				this->serverEntity;
-				this->setIndex;
+				this->serverEntity = serverEntity;
+				this->setIndex = setIndex;
 				this->cardIndex = cardIndex;
 			}
 
