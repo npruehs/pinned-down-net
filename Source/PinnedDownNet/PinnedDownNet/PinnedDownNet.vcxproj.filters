@@ -31,6 +31,7 @@
     <ClInclude Include="Events\VictoryEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
+    <ClInclude Include="PinnedDownAzure.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />

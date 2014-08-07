@@ -86,6 +86,7 @@
     <ClInclude Include="Events\LoginSuccessEvent.h" />
     <ClInclude Include="Events\TurnPhaseChangedEvent.h" />
     <ClInclude Include="Events\VictoryEvent.h" />
+    <ClInclude Include="PinnedDownAzure.h" />
     <ClInclude Include="PinnedDownNet.h" />
   </ItemGroup>
   <ItemGroup>

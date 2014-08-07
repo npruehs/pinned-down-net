@@ -24,3 +24,4 @@ Source/PinnedDownNet/PinnedDownNet.sdf
 Source/PinnedDownNet/PinnedDownNet.v11.suo
 Source/PinnedDownNet/PinnedDownNet/PinnedDownNet.vcxproj.user
 Obj/
+Source/PinnedDownNet/PinnedDownNet/PinnedDownAzure.h
