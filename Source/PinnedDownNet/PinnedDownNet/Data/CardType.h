@@ -9,5 +9,19 @@ namespace PinnedDownNet
 			InvalidCard,
 			Starship
 		};
+
+		inline std::string CardTypeToString(CardType cardType)
+		{
+			switch (cardType)
+			{
+			case CardType::Starship:
+				return "Starship";
+				break;
+
+			default:
+				return "Invalid";
+				break;
+			}
+		}
 	}
 }
