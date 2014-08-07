@@ -68,6 +68,9 @@
     <ClInclude Include="Events\CardCreatedEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
+    <ClInclude Include="Events\CardRemovedEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -105,6 +108,9 @@
       <Filter>Data\Cards</Filter>
     </ClCompile>
     <ClCompile Include="Events\CardCreatedEvent.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\CardRemovedEvent.cpp">
       <Filter>Events</Filter>
     </ClCompile>
   </ItemGroup>
