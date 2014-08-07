@@ -10,6 +10,12 @@
     <Filter Include="Data">
       <UniqueIdentifier>{af29602e-ec98-415d-b9d0-71e29a5dd7f7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{f4ada33c-97dc-49e9-b394-2af171837a43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Cards">
+      <UniqueIdentifier>{aeee085a-9215-4b06-be00-362df45bd01d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PinnedDownNet.h" />
@@ -32,6 +38,33 @@
       <Filter>Events</Filter>
     </ClInclude>
     <ClInclude Include="PinnedDownAzure.h" />
+    <ClInclude Include="Components\CardComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Data\CardType.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\ThreatComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Data\Affiliation.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\AffiliationComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\PowerComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Data\CardFactory.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Data\CardSet.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Data\Cards\CardSetPremiere.h">
+      <Filter>Data\Cards</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -49,6 +82,24 @@
     </ClCompile>
     <ClCompile Include="Events\VictoryEvent.cpp">
       <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\AffiliationComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\CardComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\PowerComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\ThreatComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Data\CardFactory.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Data\Cards\CardSetPremiere.cpp">
+      <Filter>Data\Cards</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

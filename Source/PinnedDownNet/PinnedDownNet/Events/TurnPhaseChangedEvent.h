@@ -26,7 +26,7 @@ namespace PinnedDownNet
 
 			TurnPhase newTurnPhase;
 
-			explicit TurnPhaseChangedEvent() : TurnPhaseChangedEvent(TurnPhase::Invalid)
+			explicit TurnPhaseChangedEvent() : TurnPhaseChangedEvent(TurnPhase::InvalidTurnPhase)
 			{
 			}
 

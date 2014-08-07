@@ -81,6 +81,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Actions\EndTurnAction.h" />
+    <ClInclude Include="Components\AffiliationComponent.h" />
+    <ClInclude Include="Components\CardComponent.h" />
+    <ClInclude Include="Components\PowerComponent.h" />
+    <ClInclude Include="Components\ThreatComponent.h" />
+    <ClInclude Include="Data\Affiliation.h" />
+    <ClInclude Include="Data\CardFactory.h" />
+    <ClInclude Include="Data\CardSet.h" />
+    <ClInclude Include="Data\Cards\CardSetPremiere.h" />
+    <ClInclude Include="Data\CardType.h" />
     <ClInclude Include="Data\TurnPhase.h" />
     <ClInclude Include="Events\CoveredDistanceChangedEvent.h" />
     <ClInclude Include="Events\LoginSuccessEvent.h" />
@@ -91,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Actions\EndTurnAction.cpp" />
+    <ClCompile Include="Components\AffiliationComponent.cpp" />
+    <ClCompile Include="Components\CardComponent.cpp" />
+    <ClCompile Include="Components\PowerComponent.cpp" />
+    <ClCompile Include="Components\ThreatComponent.cpp" />
+    <ClCompile Include="Data\CardFactory.cpp" />
+    <ClCompile Include="Data\Cards\CardSetPremiere.cpp" />
     <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp" />
     <ClCompile Include="Events\LoginSuccessEvent.cpp" />
     <ClCompile Include="Events\TurnPhaseChangedEvent.cpp" />

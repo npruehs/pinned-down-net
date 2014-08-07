@@ -6,7 +6,7 @@ namespace PinnedDownNet
 	{
 		enum TurnPhase
 		{
-			Invalid,
+			InvalidTurnPhase,
 			Main,
 			Jump,
 			Attack,
