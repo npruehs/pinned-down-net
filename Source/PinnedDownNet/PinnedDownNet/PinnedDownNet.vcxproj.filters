@@ -71,6 +71,12 @@
     <ClInclude Include="Events\CardRemovedEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
+    <ClInclude Include="Events\DefeatEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\FlagshipComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -112,6 +118,12 @@
     </ClCompile>
     <ClCompile Include="Events\CardRemovedEvent.cpp">
       <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\DefeatEvent.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\FlagshipComponent.cpp">
+      <Filter>Components</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

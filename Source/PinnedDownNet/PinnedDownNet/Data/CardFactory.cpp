@@ -5,6 +5,7 @@
 
 #include "..\Components\AffiliationComponent.h"
 #include "..\Components\CardComponent.h"
+#include "..\Components\FlagshipComponent.h"
 #include "..\Components\PowerComponent.h"
 #include "..\Components\ThreatComponent.h"
 
@@ -13,6 +14,7 @@
 using namespace PinnedDownCore;
 using namespace PinnedDownNet::Components;
 using namespace PinnedDownNet::Data::Cards;
+
 
 CardFactory::CardFactory(PinnedDownCore::Game* game)
 {
@@ -53,6 +55,12 @@ void CardFactory::SetAffiliation(Entity entity, Affiliation affiliation)
 {
 	auto affiliationComponent = this->game->entityManager->GetComponent<AffiliationComponent>(entity, AffiliationComponent::AffiliationComponentType);
 	affiliationComponent->affiliation = affiliation;
+}
+
+void CardFactory::SetFlagship(Entity entity)
+{
+	auto flagshipComponent = std::make_shared<FlagshipComponent>();
+	this->game->entityManager->AddComponent(entity, flagshipComponent);
 }
 
 void CardFactory::SetPower(Entity entity, int power)

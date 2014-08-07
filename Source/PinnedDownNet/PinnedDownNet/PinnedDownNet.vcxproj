@@ -83,6 +83,7 @@
     <ClInclude Include="Actions\EndTurnAction.h" />
     <ClInclude Include="Components\AffiliationComponent.h" />
     <ClInclude Include="Components\CardComponent.h" />
+    <ClInclude Include="Components\FlagshipComponent.h" />
     <ClInclude Include="Components\PowerComponent.h" />
     <ClInclude Include="Components\ThreatComponent.h" />
     <ClInclude Include="Data\Affiliation.h" />
@@ -94,6 +95,7 @@
     <ClInclude Include="Events\CardCreatedEvent.h" />
     <ClInclude Include="Events\CardRemovedEvent.h" />
     <ClInclude Include="Events\CoveredDistanceChangedEvent.h" />
+    <ClInclude Include="Events\DefeatEvent.h" />
     <ClInclude Include="Events\LoginSuccessEvent.h" />
     <ClInclude Include="Events\TurnPhaseChangedEvent.h" />
     <ClInclude Include="Events\VictoryEvent.h" />
@@ -104,6 +106,7 @@
     <ClCompile Include="Actions\EndTurnAction.cpp" />
     <ClCompile Include="Components\AffiliationComponent.cpp" />
     <ClCompile Include="Components\CardComponent.cpp" />
+    <ClCompile Include="Components\FlagshipComponent.cpp" />
     <ClCompile Include="Components\PowerComponent.cpp" />
     <ClCompile Include="Components\ThreatComponent.cpp" />
     <ClCompile Include="Data\CardFactory.cpp" />
@@ -111,6 +114,7 @@
     <ClCompile Include="Events\CardCreatedEvent.cpp" />
     <ClCompile Include="Events\CardRemovedEvent.cpp" />
     <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp" />
+    <ClCompile Include="Events\DefeatEvent.cpp" />
     <ClCompile Include="Events\LoginSuccessEvent.cpp" />
     <ClCompile Include="Events\TurnPhaseChangedEvent.cpp" />
     <ClCompile Include="Events\VictoryEvent.cpp" />

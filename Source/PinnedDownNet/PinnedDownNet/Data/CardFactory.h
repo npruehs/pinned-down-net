@@ -22,6 +22,7 @@ namespace PinnedDownNet
 			Entity CreateStarship(int setIndex, int cardIndex);
 
 			void SetAffiliation(Entity entity, Affiliation affiliation);
+			void SetFlagship(Entity entity);
 			void SetPower(Entity entity, int power);
 			void SetThreat(Entity entity, int threat);
 
