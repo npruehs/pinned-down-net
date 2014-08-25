@@ -77,6 +77,12 @@
     <ClInclude Include="Components\FlagshipComponent.h">
       <Filter>Components</Filter>
     </ClInclude>
+    <ClInclude Include="Actions\AddThreatAction.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\ThreatChangedEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -124,6 +130,12 @@
     </ClCompile>
     <ClCompile Include="Components\FlagshipComponent.cpp">
       <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\AddThreatAction.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\ThreatChangedEvent.cpp">
+      <Filter>Events</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

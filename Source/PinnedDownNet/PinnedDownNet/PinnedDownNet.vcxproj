@@ -80,6 +80,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Actions\AddThreatAction.h" />
     <ClInclude Include="Actions\EndTurnAction.h" />
     <ClInclude Include="Components\AffiliationComponent.h" />
     <ClInclude Include="Components\CardComponent.h" />
@@ -97,12 +98,14 @@
     <ClInclude Include="Events\CoveredDistanceChangedEvent.h" />
     <ClInclude Include="Events\DefeatEvent.h" />
     <ClInclude Include="Events\LoginSuccessEvent.h" />
+    <ClInclude Include="Events\ThreatChangedEvent.h" />
     <ClInclude Include="Events\TurnPhaseChangedEvent.h" />
     <ClInclude Include="Events\VictoryEvent.h" />
     <ClInclude Include="PinnedDownAzure.h" />
     <ClInclude Include="PinnedDownNet.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Actions\AddThreatAction.cpp" />
     <ClCompile Include="Actions\EndTurnAction.cpp" />
     <ClCompile Include="Components\AffiliationComponent.cpp" />
     <ClCompile Include="Components\CardComponent.cpp" />
@@ -116,6 +119,7 @@
     <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp" />
     <ClCompile Include="Events\DefeatEvent.cpp" />
     <ClCompile Include="Events\LoginSuccessEvent.cpp" />
+    <ClCompile Include="Events\ThreatChangedEvent.cpp" />
     <ClCompile Include="Events\TurnPhaseChangedEvent.cpp" />
     <ClCompile Include="Events\VictoryEvent.cpp" />
     <ClCompile Include="PinnedDownNet.cpp" />
