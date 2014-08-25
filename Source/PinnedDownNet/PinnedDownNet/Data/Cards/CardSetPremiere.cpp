@@ -22,6 +22,15 @@ Entity CardSetPremiere::CreateCard(int cardIndex)
 		this->cardFactory->SetFlagship(card);
 		this->cardFactory->SetPower(card, 8);
 		this->cardFactory->SetThreat(card, 4);
+		break;
+
+	case 73:
+		// Enemy - Assault Frigate.
+		card = this->cardFactory->CreateStarship(this->GetSetIndex(), 73);
+		this->cardFactory->SetAffiliation(card, Affiliation::Enemy);
+		this->cardFactory->SetPower(card, 8);
+		this->cardFactory->SetThreat(card, 2);
+		break;
 	}
 
 	this->cardFactory->FinishCard(card);
