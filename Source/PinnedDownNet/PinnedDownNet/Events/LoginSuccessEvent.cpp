@@ -1,3 +1,15 @@
 #include "LoginSuccessEvent.h"
 
-const HashedString PinnedDownNet::Events::LoginSuccessEvent::LoginSuccessEventType = HashedString("LoginSuccess");
+using namespace PinnedDownNet::Events;
+
+const HashedString LoginSuccessEvent::LoginSuccessEventType = HashedString("LoginSuccess");
+
+void LoginSuccessEvent::Serialize(std::ostrstream& out)
+{
+	out << this->clientId << " ";
+}
+
+void LoginSuccessEvent::Deserialize(std::istrstream& in)
+{
+	in >> this->clientId;
+}

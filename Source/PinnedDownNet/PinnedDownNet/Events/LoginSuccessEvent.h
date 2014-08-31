@@ -21,6 +21,20 @@ namespace PinnedDownNet
 			{
 				return NetRole::Client;
 			}
+
+			int clientId;
+
+			explicit LoginSuccessEvent() : LoginSuccessEvent(0)
+			{
+			}
+
+			explicit LoginSuccessEvent(int clientId)
+			{
+				this->clientId = clientId;
+			}
+
+			void Serialize(std::ostrstream& out);
+			void Deserialize(std::istrstream& in);
 		};
 	}
 }
