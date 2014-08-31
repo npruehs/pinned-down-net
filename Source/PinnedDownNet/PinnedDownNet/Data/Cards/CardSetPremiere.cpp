@@ -33,6 +33,5 @@ Entity CardSetPremiere::CreateCard(int cardIndex)
 		break;
 	}
 
-	this->cardFactory->FinishCard(card);
 	return card;
 }

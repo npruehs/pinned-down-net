@@ -7,6 +7,7 @@ const HashedString CardCreatedEvent::CardCreatedEventType = HashedString("CardCr
 void CardCreatedEvent::Serialize(std::ostrstream& out)
 {
 	out << this->serverEntity << " ";
+	out << this->owner << " ";
 	out << this->setIndex << " ";
 	out << this->cardIndex << " ";
 }
@@ -14,6 +15,7 @@ void CardCreatedEvent::Serialize(std::ostrstream& out)
 void CardCreatedEvent::Deserialize(std::istrstream& in)
 {
 	in >> this->serverEntity;
+	in >> this->owner;
 	in >> this->setIndex;
 	in >> this->cardIndex;
 }

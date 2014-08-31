@@ -6,6 +6,7 @@
 #include "..\Components\AffiliationComponent.h"
 #include "..\Components\CardComponent.h"
 #include "..\Components\FlagshipComponent.h"
+#include "..\Components\OwnerComponent.h"
 #include "..\Components\PowerComponent.h"
 #include "..\Components\ThreatComponent.h"
 
@@ -23,10 +24,22 @@ CardFactory::CardFactory(PinnedDownCore::Game* game)
 	this->cardSets[0] = std::make_shared<CardSetPremiere>(this);
 }
 
-Entity CardFactory::CreateCard(int setIndex, int cardIndex)
+Entity CardFactory::CreateCard(Entity owner, int setIndex, int cardIndex)
 {
+	// Get card set.
 	auto cardSet = this->cardSets[setIndex];
-	return cardSet->CreateCard(cardIndex);
+
+	// Create card.
+	auto cardEntity = cardSet->CreateCard(cardIndex);
+
+	// Set owner.
+	auto ownerComponent = std::make_shared<OwnerComponent>();
+	ownerComponent->owner = owner;
+	this->game->entityManager->AddComponent(cardEntity, ownerComponent);
+
+	// Notify listeners.
+	this->FinishCard(cardEntity);
+	return cardEntity;
 }
 
 Entity CardFactory::CreateStarship(int setIndex, int cardIndex)

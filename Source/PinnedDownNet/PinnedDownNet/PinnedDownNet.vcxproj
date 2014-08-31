@@ -85,6 +85,7 @@
     <ClInclude Include="Components\AffiliationComponent.h" />
     <ClInclude Include="Components\CardComponent.h" />
     <ClInclude Include="Components\FlagshipComponent.h" />
+    <ClInclude Include="Components\OwnerComponent.h" />
     <ClInclude Include="Components\PlayerComponent.h" />
     <ClInclude Include="Components\PowerComponent.h" />
     <ClInclude Include="Components\ThreatComponent.h" />
@@ -113,6 +114,7 @@
     <ClCompile Include="Components\AffiliationComponent.cpp" />
     <ClCompile Include="Components\CardComponent.cpp" />
     <ClCompile Include="Components\FlagshipComponent.cpp" />
+    <ClCompile Include="Components\OwnerComponent.cpp" />
     <ClCompile Include="Components\PlayerComponent.cpp" />
     <ClCompile Include="Components\PowerComponent.cpp" />
     <ClCompile Include="Components\ThreatComponent.cpp" />

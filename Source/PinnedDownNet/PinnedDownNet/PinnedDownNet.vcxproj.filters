@@ -92,6 +92,9 @@
     <ClInclude Include="Components\PlayerComponent.h">
       <Filter>Components</Filter>
     </ClInclude>
+    <ClInclude Include="Components\OwnerComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -153,6 +156,9 @@
       <Filter>Data</Filter>
     </ClCompile>
     <ClCompile Include="Components\PlayerComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\OwnerComponent.cpp">
       <Filter>Components</Filter>
     </ClCompile>
   </ItemGroup>
