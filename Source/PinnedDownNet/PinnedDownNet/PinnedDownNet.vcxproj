@@ -81,6 +81,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Actions\AddThreatAction.h" />
+    <ClInclude Include="Actions\AssignCardAction.h" />
     <ClInclude Include="Actions\EndTurnAction.h" />
     <ClInclude Include="Components\AffiliationComponent.h" />
     <ClInclude Include="Components\CardComponent.h" />
@@ -96,6 +97,7 @@
     <ClInclude Include="Data\CardType.h" />
     <ClInclude Include="Data\PlayerFactory.h" />
     <ClInclude Include="Data\TurnPhase.h" />
+    <ClInclude Include="Events\CardAssignedEvent.h" />
     <ClInclude Include="Events\CardCreatedEvent.h" />
     <ClInclude Include="Events\CardRemovedEvent.h" />
     <ClInclude Include="Events\CoveredDistanceChangedEvent.h" />
@@ -110,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Actions\AddThreatAction.cpp" />
+    <ClCompile Include="Actions\AssignCardAction.cpp" />
     <ClCompile Include="Actions\EndTurnAction.cpp" />
     <ClCompile Include="Components\AffiliationComponent.cpp" />
     <ClCompile Include="Components\CardComponent.cpp" />
@@ -121,6 +124,7 @@
     <ClCompile Include="Data\CardFactory.cpp" />
     <ClCompile Include="Data\Cards\CardSetPremiere.cpp" />
     <ClCompile Include="Data\PlayerFactory.cpp" />
+    <ClCompile Include="Events\CardAssignedEvent.cpp" />
     <ClCompile Include="Events\CardCreatedEvent.cpp" />
     <ClCompile Include="Events\CardRemovedEvent.cpp" />
     <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp" />

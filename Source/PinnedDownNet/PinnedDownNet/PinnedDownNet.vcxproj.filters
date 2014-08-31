@@ -95,6 +95,12 @@
     <ClInclude Include="Components\OwnerComponent.h">
       <Filter>Components</Filter>
     </ClInclude>
+    <ClInclude Include="Events\CardAssignedEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\AssignCardAction.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -160,6 +166,12 @@
     </ClCompile>
     <ClCompile Include="Components\OwnerComponent.cpp">
       <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\AssignCardAction.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\CardAssignedEvent.cpp">
+      <Filter>Events</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
