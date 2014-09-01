@@ -83,6 +83,7 @@
     <ClInclude Include="Actions\AddThreatAction.h" />
     <ClInclude Include="Actions\AssignCardAction.h" />
     <ClInclude Include="Actions\EndTurnAction.h" />
+    <ClInclude Include="Actions\ResolveFightAction.h" />
     <ClInclude Include="Components\AffiliationComponent.h" />
     <ClInclude Include="Components\CardComponent.h" />
     <ClInclude Include="Components\FlagshipComponent.h" />
@@ -102,6 +103,7 @@
     <ClInclude Include="Events\CardRemovedEvent.h" />
     <ClInclude Include="Events\CoveredDistanceChangedEvent.h" />
     <ClInclude Include="Events\DefeatEvent.h" />
+    <ClInclude Include="Events\FightResolvedEvent.h" />
     <ClInclude Include="Events\LoginSuccessEvent.h" />
     <ClInclude Include="Events\PlayerAddedEvent.h" />
     <ClInclude Include="Events\ThreatChangedEvent.h" />
@@ -114,6 +116,7 @@
     <ClCompile Include="Actions\AddThreatAction.cpp" />
     <ClCompile Include="Actions\AssignCardAction.cpp" />
     <ClCompile Include="Actions\EndTurnAction.cpp" />
+    <ClCompile Include="Actions\ResolveFightAction.cpp" />
     <ClCompile Include="Components\AffiliationComponent.cpp" />
     <ClCompile Include="Components\CardComponent.cpp" />
     <ClCompile Include="Components\FlagshipComponent.cpp" />
@@ -129,6 +132,7 @@
     <ClCompile Include="Events\CardRemovedEvent.cpp" />
     <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp" />
     <ClCompile Include="Events\DefeatEvent.cpp" />
+    <ClCompile Include="Events\FightResolvedEvent.cpp" />
     <ClCompile Include="Events\LoginSuccessEvent.cpp" />
     <ClCompile Include="Events\PlayerAddedEvent.cpp" />
     <ClCompile Include="Events\ThreatChangedEvent.cpp" />

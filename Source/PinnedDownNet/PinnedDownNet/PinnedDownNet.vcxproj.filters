@@ -101,6 +101,12 @@
     <ClInclude Include="Actions\AssignCardAction.h">
       <Filter>Actions</Filter>
     </ClInclude>
+    <ClInclude Include="Actions\ResolveFightAction.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\FightResolvedEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -171,6 +177,12 @@
       <Filter>Actions</Filter>
     </ClCompile>
     <ClCompile Include="Events\CardAssignedEvent.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\ResolveFightAction.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\FightResolvedEvent.cpp">
       <Filter>Events</Filter>
     </ClCompile>
   </ItemGroup>
