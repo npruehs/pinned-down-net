@@ -80,7 +80,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Actions\AddThreatAction.h" />
     <ClInclude Include="Actions\AssignCardAction.h" />
     <ClInclude Include="Actions\EndTurnAction.h" />
     <ClInclude Include="Actions\ResolveFightAction.h" />
@@ -113,7 +112,6 @@
     <ClInclude Include="PinnedDownNet.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Actions\AddThreatAction.cpp" />
     <ClCompile Include="Actions\AssignCardAction.cpp" />
     <ClCompile Include="Actions\EndTurnAction.cpp" />
     <ClCompile Include="Actions\ResolveFightAction.cpp" />
