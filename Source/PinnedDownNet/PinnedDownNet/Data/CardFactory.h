@@ -17,6 +17,7 @@ namespace PinnedDownNet
 		public:
 			CardFactory(PinnedDownCore::Game* game);
 
+			Entity PrepareCard(Entity owner, int setIndex, int cardIndex);
 			Entity CreateCard(Entity owner, int setIndex, int cardIndex);
 
 			Entity CreateStarship(int setIndex, int cardIndex);

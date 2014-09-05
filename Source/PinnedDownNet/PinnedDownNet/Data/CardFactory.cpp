@@ -24,7 +24,7 @@ CardFactory::CardFactory(PinnedDownCore::Game* game)
 	this->cardSets[0] = std::make_shared<CardSetPremiere>(this);
 }
 
-Entity CardFactory::CreateCard(Entity owner, int setIndex, int cardIndex)
+Entity CardFactory::PrepareCard(Entity owner, int setIndex, int cardIndex)
 {
 	// Get card set.
 	auto cardSet = this->cardSets[setIndex];
@@ -37,7 +37,12 @@ Entity CardFactory::CreateCard(Entity owner, int setIndex, int cardIndex)
 	ownerComponent->owner = owner;
 	this->game->entityManager->AddComponent(cardEntity, ownerComponent);
 
-	// Notify listeners.
+	return cardEntity;
+}
+
+Entity CardFactory::CreateCard(Entity owner, int setIndex, int cardIndex)
+{
+	auto cardEntity = this->PrepareCard(owner, setIndex, cardIndex);
 	this->FinishCard(cardEntity);
 	return cardEntity;
 }
