@@ -31,6 +31,14 @@ Entity CardSetPremiere::CreateCard(int cardIndex)
 		this->cardFactory->SetThreat(card, 4);
 		break;
 
+	case 57:
+		// Blue Wing - Paris.
+		card = this->cardFactory->CreateStarship(this->GetSetIndex(), 57);
+		this->cardFactory->SetAffiliation(card, Affiliation::BlueWing);
+		this->cardFactory->SetPower(card, 6);
+		this->cardFactory->SetThreat(card, 2);
+		break;
+
 	case 73:
 		// Enemy - Assault Frigate.
 		card = this->cardFactory->CreateStarship(this->GetSetIndex(), 73);
