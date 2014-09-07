@@ -8,6 +8,7 @@
 #include "..\Components\FlagshipComponent.h"
 #include "..\Components\OwnerComponent.h"
 #include "..\Components\PowerComponent.h"
+#include "..\Components\StructureComponent.h"
 #include "..\Components\ThreatComponent.h"
 
 #include "EntityInitializedEvent.h"
@@ -47,6 +48,25 @@ Entity CardFactory::CreateCard(Entity owner, int setIndex, int cardIndex)
 	return cardEntity;
 }
 
+Entity CardFactory::CreateDamage(int setIndex, int cardIndex)
+{
+	Entity entity = this->game->entityManager->CreateEntity();
+
+	auto cardComponent = std::make_shared<CardComponent>();
+	cardComponent->setIndex = setIndex;
+	cardComponent->cardIndex = cardIndex;
+	cardComponent->cardType = CardType::Damage;
+	this->game->entityManager->AddComponent(entity, cardComponent);
+
+	auto powerComponent = std::make_shared<PowerComponent>();
+	this->game->entityManager->AddComponent(entity, powerComponent);
+
+	auto structureComponent = std::make_shared<StructureComponent>();
+	this->game->entityManager->AddComponent(entity, structureComponent);
+
+	return entity;
+}
+
 Entity CardFactory::CreateStarship(int setIndex, int cardIndex)
 {
 	Entity entity = this->game->entityManager->CreateEntity();
@@ -65,6 +85,10 @@ Entity CardFactory::CreateStarship(int setIndex, int cardIndex)
 
 	auto threatComponent = std::make_shared<ThreatComponent>();
 	this->game->entityManager->AddComponent(entity, threatComponent);
+
+	auto structureComponent = std::make_shared<StructureComponent>();
+	structureComponent->structure = 100;
+	this->game->entityManager->AddComponent(entity, structureComponent);
 
 	return entity;
 }
@@ -87,6 +111,12 @@ void CardFactory::SetPower(Entity entity, int power)
 	powerComponent->power = power;
 }
 
+void CardFactory::SetStructure(Entity entity, int structure)
+{
+	auto structureComponent = this->game->entityManager->GetComponent<StructureComponent>(entity, StructureComponent::StructureComponentType);
+	structureComponent->structure = structure;
+}
+
 void CardFactory::SetThreat(Entity entity, int threat)
 {
 	auto threatComponent = this->game->entityManager->GetComponent<ThreatComponent>(entity, ThreatComponent::ThreatComponentType);
@@ -96,5 +126,5 @@ void CardFactory::SetThreat(Entity entity, int threat)
 void CardFactory::FinishCard(Entity entity)
 {
 	auto entityInitializedEvent = std::make_shared<EntityInitializedEvent>(entity);
-	this->game->eventManager->QueueEvent(entityInitializedEvent);
+	this->game->eventManager->RaiseEvent(entityInitializedEvent);
 }

@@ -15,6 +15,13 @@ Entity CardSetPremiere::CreateCard(int cardIndex)
 
 	switch (cardIndex)
 	{
+	case 3:
+		// Damage - Direct Hit.
+		card = this->cardFactory->CreateDamage(this->GetSetIndex(), 3);
+		this->cardFactory->SetPower(card, -1);
+		this->cardFactory->SetStructure(card, -35);
+		break;
+
 	case 56:
 		// Blue Wing - Moscow.
 		card = this->cardFactory->CreateStarship(this->GetSetIndex(), 56);

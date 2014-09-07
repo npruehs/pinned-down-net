@@ -7,6 +7,7 @@ namespace PinnedDownNet
 		enum CardType
 		{
 			InvalidCard,
+			Damage,
 			Starship
 		};
 
@@ -14,6 +15,10 @@ namespace PinnedDownNet
 		{
 			switch (cardType)
 			{
+			case CardType::Damage:
+				return "Damage";
+				break;
+
 			case CardType::Starship:
 				return "Starship";
 				break;

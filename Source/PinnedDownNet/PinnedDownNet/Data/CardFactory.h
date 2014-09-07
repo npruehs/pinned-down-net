@@ -20,11 +20,13 @@ namespace PinnedDownNet
 			Entity PrepareCard(Entity owner, int setIndex, int cardIndex);
 			Entity CreateCard(Entity owner, int setIndex, int cardIndex);
 
+			Entity CreateDamage(int setIndex, int cardIndex);
 			Entity CreateStarship(int setIndex, int cardIndex);
-
+			
 			void SetAffiliation(Entity entity, Affiliation affiliation);
 			void SetFlagship(Entity entity);
 			void SetPower(Entity entity, int power);
+			void SetStructure(Entity entity, int structure);
 			void SetThreat(Entity entity, int threat);
 
 			void FinishCard(Entity card);

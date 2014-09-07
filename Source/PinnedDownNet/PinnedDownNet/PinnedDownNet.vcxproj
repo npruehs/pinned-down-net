@@ -89,6 +89,7 @@
     <ClInclude Include="Components\OwnerComponent.h" />
     <ClInclude Include="Components\PlayerComponent.h" />
     <ClInclude Include="Components\PowerComponent.h" />
+    <ClInclude Include="Components\StructureComponent.h" />
     <ClInclude Include="Components\ThreatComponent.h" />
     <ClInclude Include="Data\Affiliation.h" />
     <ClInclude Include="Data\CardFactory.h" />
@@ -105,6 +106,7 @@
     <ClInclude Include="Events\FightResolvedEvent.h" />
     <ClInclude Include="Events\LoginSuccessEvent.h" />
     <ClInclude Include="Events\PlayerAddedEvent.h" />
+    <ClInclude Include="Events\ShipDamagedEvent.h" />
     <ClInclude Include="Events\ThreatChangedEvent.h" />
     <ClInclude Include="Events\TurnPhaseChangedEvent.h" />
     <ClInclude Include="Events\VictoryEvent.h" />
@@ -121,6 +123,7 @@
     <ClCompile Include="Components\OwnerComponent.cpp" />
     <ClCompile Include="Components\PlayerComponent.cpp" />
     <ClCompile Include="Components\PowerComponent.cpp" />
+    <ClCompile Include="Components\StructureComponent.cpp" />
     <ClCompile Include="Components\ThreatComponent.cpp" />
     <ClCompile Include="Data\CardFactory.cpp" />
     <ClCompile Include="Data\Cards\CardSetPremiere.cpp" />
@@ -133,6 +136,7 @@
     <ClCompile Include="Events\FightResolvedEvent.cpp" />
     <ClCompile Include="Events\LoginSuccessEvent.cpp" />
     <ClCompile Include="Events\PlayerAddedEvent.cpp" />
+    <ClCompile Include="Events\ShipDamagedEvent.cpp" />
     <ClCompile Include="Events\ThreatChangedEvent.cpp" />
     <ClCompile Include="Events\TurnPhaseChangedEvent.cpp" />
     <ClCompile Include="Events\VictoryEvent.cpp" />
