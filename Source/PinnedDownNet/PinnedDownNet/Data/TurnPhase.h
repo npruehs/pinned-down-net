@@ -8,11 +8,10 @@ namespace PinnedDownNet
 		{
 			InvalidTurnPhase,
 			Main,
-			Jump,
 			Attack,
 			Assignment,
 			Fight,
-			WrapUp
+			Jump
 		};
 
 		inline std::string TurnPhaseToString(TurnPhase turnPhase)
@@ -37,10 +36,6 @@ namespace PinnedDownNet
 
 			case TurnPhase::Main:
 				return "Main";
-				break;
-
-			case TurnPhase::WrapUp:
-				return "Wrap Up";
 				break;
 
 			default:
