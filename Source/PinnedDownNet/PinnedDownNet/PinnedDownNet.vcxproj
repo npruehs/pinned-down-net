@@ -103,6 +103,7 @@
     <ClInclude Include="Events\CardRemovedEvent.h" />
     <ClInclude Include="Events\CoveredDistanceChangedEvent.h" />
     <ClInclude Include="Events\DefeatEvent.h" />
+    <ClInclude Include="Events\ErrorMessageEvent.h" />
     <ClInclude Include="Events\FightResolvedEvent.h" />
     <ClInclude Include="Events\LoginSuccessEvent.h" />
     <ClInclude Include="Events\PlayerAddedEvent.h" />
@@ -133,6 +134,7 @@
     <ClCompile Include="Events\CardRemovedEvent.cpp" />
     <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp" />
     <ClCompile Include="Events\DefeatEvent.cpp" />
+    <ClCompile Include="Events\ErrorMessageEvent.cpp" />
     <ClCompile Include="Events\FightResolvedEvent.cpp" />
     <ClCompile Include="Events\LoginSuccessEvent.cpp" />
     <ClCompile Include="Events\PlayerAddedEvent.cpp" />

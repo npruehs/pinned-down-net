@@ -110,6 +110,9 @@
     <ClInclude Include="Components\StructureComponent.h">
       <Filter>Components</Filter>
     </ClInclude>
+    <ClInclude Include="Events\ErrorMessageEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -190,6 +193,9 @@
     </ClCompile>
     <ClCompile Include="Components\StructureComponent.cpp">
       <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\ErrorMessageEvent.cpp">
+      <Filter>Events</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
