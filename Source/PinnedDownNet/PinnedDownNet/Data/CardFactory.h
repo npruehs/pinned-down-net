@@ -4,6 +4,8 @@
 
 #include "Affiliation.h"
 
+#include "..\Data\CardState.h"
+
 using namespace PinnedDownCore;
 
 namespace PinnedDownNet
@@ -17,8 +19,8 @@ namespace PinnedDownNet
 		public:
 			CardFactory(PinnedDownCore::Game* game);
 
-			Entity PrepareCard(Entity owner, int setIndex, int cardIndex);
-			Entity CreateCard(Entity owner, int setIndex, int cardIndex);
+			Entity PrepareCard(Entity owner, int setIndex, int cardIndex, CardState initialState);
+			Entity CreateCard(Entity owner, int setIndex, int cardIndex, CardState initialState);
 
 			Entity CreateDamage(int setIndex, int cardIndex);
 			Entity CreateStarship(int setIndex, int cardIndex);

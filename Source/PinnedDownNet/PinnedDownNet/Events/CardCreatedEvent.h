@@ -3,7 +3,10 @@
 #include "EntityManager.h"
 #include "Event.h"
 
+#include "..\Data\CardState.h"
+
 using namespace PinnedDownCore;
+using namespace PinnedDownNet::Data;
 
 namespace PinnedDownNet
 {
@@ -27,17 +30,19 @@ namespace PinnedDownNet
 			Entity owner;
 			int setIndex;
 			int cardIndex;
+			CardState initialState;
 
-			explicit CardCreatedEvent() : CardCreatedEvent(INVALID_ENTITY_ID, INVALID_ENTITY_ID, 0, 0)
+			explicit CardCreatedEvent() : CardCreatedEvent(INVALID_ENTITY_ID, INVALID_ENTITY_ID, 0, 0, CardState::InvalidState)
 			{
 			}
 
-			explicit CardCreatedEvent(Entity serverEntity, Entity owner, int setIndex, int cardIndex)
+			explicit CardCreatedEvent(Entity serverEntity, Entity owner, int setIndex, int cardIndex, CardState initialState)
 			{
 				this->serverEntity = serverEntity;
 				this->owner = owner;
 				this->setIndex = setIndex;
 				this->cardIndex = cardIndex;
+				this->initialState = initialState;
 			}
 
 			void Serialize(std::ostrstream& out);

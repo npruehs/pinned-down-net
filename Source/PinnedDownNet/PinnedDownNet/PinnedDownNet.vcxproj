@@ -85,6 +85,7 @@
     <ClInclude Include="Actions\ResolveFightAction.h" />
     <ClInclude Include="Components\AffiliationComponent.h" />
     <ClInclude Include="Components\CardComponent.h" />
+    <ClInclude Include="Components\CardStateComponent.h" />
     <ClInclude Include="Components\FlagshipComponent.h" />
     <ClInclude Include="Components\OwnerComponent.h" />
     <ClInclude Include="Components\PlayerComponent.h" />
@@ -94,6 +95,7 @@
     <ClInclude Include="Data\Affiliation.h" />
     <ClInclude Include="Data\CardFactory.h" />
     <ClInclude Include="Data\CardSet.h" />
+    <ClInclude Include="Data\CardState.h" />
     <ClInclude Include="Data\Cards\CardSetPremiere.h" />
     <ClInclude Include="Data\CardType.h" />
     <ClInclude Include="Data\PlayerFactory.h" />
@@ -101,6 +103,7 @@
     <ClInclude Include="Events\CardAssignedEvent.h" />
     <ClInclude Include="Events\CardCreatedEvent.h" />
     <ClInclude Include="Events\CardRemovedEvent.h" />
+    <ClInclude Include="Events\CardStateChangedEvent.h" />
     <ClInclude Include="Events\CoveredDistanceChangedEvent.h" />
     <ClInclude Include="Events\DefeatEvent.h" />
     <ClInclude Include="Events\ErrorMessageEvent.h" />
@@ -120,6 +123,7 @@
     <ClCompile Include="Actions\ResolveFightAction.cpp" />
     <ClCompile Include="Components\AffiliationComponent.cpp" />
     <ClCompile Include="Components\CardComponent.cpp" />
+    <ClCompile Include="Components\CardStateComponent.cpp" />
     <ClCompile Include="Components\FlagshipComponent.cpp" />
     <ClCompile Include="Components\OwnerComponent.cpp" />
     <ClCompile Include="Components\PlayerComponent.cpp" />
@@ -132,6 +136,7 @@
     <ClCompile Include="Events\CardAssignedEvent.cpp" />
     <ClCompile Include="Events\CardCreatedEvent.cpp" />
     <ClCompile Include="Events\CardRemovedEvent.cpp" />
+    <ClCompile Include="Events\CardStateChangedEvent.cpp" />
     <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp" />
     <ClCompile Include="Events\DefeatEvent.cpp" />
     <ClCompile Include="Events\ErrorMessageEvent.cpp" />

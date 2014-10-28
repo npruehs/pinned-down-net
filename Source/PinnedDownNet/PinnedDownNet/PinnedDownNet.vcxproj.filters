@@ -113,6 +113,15 @@
     <ClInclude Include="Events\ErrorMessageEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
+    <ClInclude Include="Components\CardStateComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Data\CardState.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\CardStateChangedEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -195,6 +204,12 @@
       <Filter>Components</Filter>
     </ClCompile>
     <ClCompile Include="Events\ErrorMessageEvent.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\CardStateComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\CardStateChangedEvent.cpp">
       <Filter>Events</Filter>
     </ClCompile>
   </ItemGroup>

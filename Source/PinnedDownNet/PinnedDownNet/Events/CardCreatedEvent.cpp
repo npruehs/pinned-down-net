@@ -10,6 +10,7 @@ void CardCreatedEvent::Serialize(std::ostrstream& out)
 	out << this->owner << " ";
 	out << this->setIndex << " ";
 	out << this->cardIndex << " ";
+	out << this->initialState << " ";
 }
 
 void CardCreatedEvent::Deserialize(std::istrstream& in)
@@ -18,4 +19,8 @@ void CardCreatedEvent::Deserialize(std::istrstream& in)
 	in >> this->owner;
 	in >> this->setIndex;
 	in >> this->cardIndex;
+
+	int initialStateValue;
+	in >> initialStateValue;
+	this->initialState = (CardState)initialStateValue;
 }

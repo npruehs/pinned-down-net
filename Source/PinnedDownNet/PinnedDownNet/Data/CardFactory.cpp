@@ -5,17 +5,21 @@
 
 #include "..\Components\AffiliationComponent.h"
 #include "..\Components\CardComponent.h"
+#include "..\Components\CardStateComponent.h"
 #include "..\Components\FlagshipComponent.h"
 #include "..\Components\OwnerComponent.h"
 #include "..\Components\PowerComponent.h"
 #include "..\Components\StructureComponent.h"
 #include "..\Components\ThreatComponent.h"
 
+#include "..\Events\CardStateChangedEvent.h"
+
 #include "EntityInitializedEvent.h"
 
 using namespace PinnedDownCore;
 using namespace PinnedDownNet::Components;
 using namespace PinnedDownNet::Data::Cards;
+using namespace PinnedDownNet::Events;
 
 
 CardFactory::CardFactory(PinnedDownCore::Game* game)
@@ -25,7 +29,7 @@ CardFactory::CardFactory(PinnedDownCore::Game* game)
 	this->cardSets[0] = std::make_shared<CardSetPremiere>(this);
 }
 
-Entity CardFactory::PrepareCard(Entity owner, int setIndex, int cardIndex)
+Entity CardFactory::PrepareCard(Entity owner, int setIndex, int cardIndex, CardState initialState)
 {
 	// Get card set.
 	auto cardSet = this->cardSets[setIndex];
@@ -38,12 +42,17 @@ Entity CardFactory::PrepareCard(Entity owner, int setIndex, int cardIndex)
 	ownerComponent->owner = owner;
 	this->game->entityManager->AddComponent(cardEntity, ownerComponent);
 
+	// Set initial state.
+	auto cardStateComponent = std::make_shared<CardStateComponent>();
+	cardStateComponent->cardState = initialState;
+	this->game->entityManager->AddComponent(cardEntity, cardStateComponent);
+
 	return cardEntity;
 }
 
-Entity CardFactory::CreateCard(Entity owner, int setIndex, int cardIndex)
+Entity CardFactory::CreateCard(Entity owner, int setIndex, int cardIndex, CardState initialState)
 {
-	auto cardEntity = this->PrepareCard(owner, setIndex, cardIndex);
+	auto cardEntity = this->PrepareCard(owner, setIndex, cardIndex, initialState);
 	this->FinishCard(cardEntity);
 	return cardEntity;
 }
