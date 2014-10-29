@@ -87,6 +87,8 @@
     <ClInclude Include="Components\AffiliationComponent.h" />
     <ClInclude Include="Components\CardComponent.h" />
     <ClInclude Include="Components\CardStateComponent.h" />
+    <ClInclude Include="Components\ConditionalPowerComponent.h" />
+    <ClInclude Include="Components\ConditionNotDamagedComponent.h" />
     <ClInclude Include="Components\FlagshipComponent.h" />
     <ClInclude Include="Components\OwnerComponent.h" />
     <ClInclude Include="Components\PlayerComponent.h" />
@@ -126,6 +128,8 @@
     <ClCompile Include="Components\AffiliationComponent.cpp" />
     <ClCompile Include="Components\CardComponent.cpp" />
     <ClCompile Include="Components\CardStateComponent.cpp" />
+    <ClCompile Include="Components\ConditionalPowerComponent.cpp" />
+    <ClCompile Include="Components\ConditionNotDamagedComponent.cpp" />
     <ClCompile Include="Components\FlagshipComponent.cpp" />
     <ClCompile Include="Components\OwnerComponent.cpp" />
     <ClCompile Include="Components\PlayerComponent.cpp" />

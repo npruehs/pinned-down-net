@@ -8,7 +8,8 @@ namespace PinnedDownNet
 		{
 			InvalidCard,
 			Damage,
-			Starship
+			Starship,
+			Effect
 		};
 
 		inline std::string CardTypeToString(CardType cardType)
@@ -21,6 +22,10 @@ namespace PinnedDownNet
 
 			case CardType::Starship:
 				return "Starship";
+				break;
+
+			case CardType::Effect:
+				return "Effect";
 				break;
 
 			default:

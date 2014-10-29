@@ -6,6 +6,8 @@
 #include "..\Components\AffiliationComponent.h"
 #include "..\Components\CardComponent.h"
 #include "..\Components\CardStateComponent.h"
+#include "..\Components\ConditionalPowerComponent.h"
+#include "..\Components\ConditionNotDamagedComponent.h"
 #include "..\Components\FlagshipComponent.h"
 #include "..\Components\OwnerComponent.h"
 #include "..\Components\PowerComponent.h"
@@ -102,6 +104,25 @@ Entity CardFactory::CreateStarship(int setIndex, int cardIndex)
 	return entity;
 }
 
+Entity CardFactory::CreateEffect(int setIndex, int cardIndex)
+{
+	Entity entity = this->game->entityManager->CreateEntity();
+
+	auto cardComponent = std::make_shared<CardComponent>();
+	cardComponent->setIndex = setIndex;
+	cardComponent->cardIndex = cardIndex;
+	cardComponent->cardType = CardType::Effect;
+	this->game->entityManager->AddComponent(entity, cardComponent);
+
+	auto affiliationComponent = std::make_shared<AffiliationComponent>();
+	this->game->entityManager->AddComponent(entity, affiliationComponent);
+
+	auto threatComponent = std::make_shared<ThreatComponent>();
+	this->game->entityManager->AddComponent(entity, threatComponent);
+
+	return entity;
+}
+
 void CardFactory::SetAffiliation(Entity entity, Affiliation affiliation)
 {
 	auto affiliationComponent = this->game->entityManager->GetComponent<AffiliationComponent>(entity, AffiliationComponent::AffiliationComponentType);
@@ -112,6 +133,13 @@ void CardFactory::SetFlagship(Entity entity)
 {
 	auto flagshipComponent = std::make_shared<FlagshipComponent>();
 	this->game->entityManager->AddComponent(entity, flagshipComponent);
+}
+
+void CardFactory::AddPower(Entity entity, int power)
+{
+	auto powerComponent = std::make_shared<PowerComponent>();
+	this->game->entityManager->AddComponent(entity, powerComponent);
+	powerComponent->power = power;
 }
 
 void CardFactory::SetPower(Entity entity, int power)
@@ -130,6 +158,19 @@ void CardFactory::SetThreat(Entity entity, int threat)
 {
 	auto threatComponent = this->game->entityManager->GetComponent<ThreatComponent>(entity, ThreatComponent::ThreatComponentType);
 	threatComponent->threat = threat;
+}
+
+void CardFactory::AddConditionalPower(Entity entity, int conditionalPower)
+{
+	auto conditionalPowerComponent = std::make_shared<ConditionalPowerComponent>();
+	this->game->entityManager->AddComponent(entity, conditionalPowerComponent);
+	conditionalPowerComponent->conditionalPower = conditionalPower;
+}
+
+void CardFactory::AddConditionNotDamaged(Entity entity)
+{
+	auto conditionNotDamagedComponent = std::make_shared<ConditionNotDamagedComponent>();
+	this->game->entityManager->AddComponent(entity, conditionNotDamagedComponent);
 }
 
 void CardFactory::FinishCard(Entity entity)

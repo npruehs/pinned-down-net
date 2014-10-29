@@ -22,6 +22,14 @@ Entity CardSetPremiere::CreateCard(int cardIndex)
 		this->cardFactory->SetStructure(card, -35);
 		break;
 
+	case 48:
+		// Blue Wing - Never Say Die.
+		card = this->cardFactory->CreateEffect(this->GetSetIndex(), 48);
+		this->cardFactory->AddPower(card, 2);
+		this->cardFactory->AddConditionalPower(card, 4);
+		this->cardFactory->AddConditionNotDamaged(card);
+		break;
+
 	case 56:
 		// Blue Wing - Moscow.
 		card = this->cardFactory->CreateStarship(this->GetSetIndex(), 56);
