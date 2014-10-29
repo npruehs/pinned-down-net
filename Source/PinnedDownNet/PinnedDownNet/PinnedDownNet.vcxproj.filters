@@ -122,6 +122,9 @@
     <ClInclude Include="Events\CardStateChangedEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
+    <ClInclude Include="Actions\PlayCardAction.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -211,6 +214,9 @@
     </ClCompile>
     <ClCompile Include="Events\CardStateChangedEvent.cpp">
       <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\PlayCardAction.cpp">
+      <Filter>Actions</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
