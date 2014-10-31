@@ -28,7 +28,7 @@ namespace PinnedDownNet
 
 			void SetAffiliation(Entity entity, Affiliation affiliation);
 			void SetFlagship(Entity entity);
-			void AddPower(Entity entity, int power);
+			void AddBonusPower(Entity entity, int power);
 			void SetPower(Entity entity, int power);
 			void SetStructure(Entity entity, int structure);
 			void SetThreat(Entity entity, int threat);

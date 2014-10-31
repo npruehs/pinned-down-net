@@ -18,7 +18,8 @@ namespace PinnedDownNet
 				return PowerComponentType;
 			}
 
-			int power;
+			int power = 0;
+			int bonusPowerUntilEndOfTurn = 0;
 		};
 	}
 }

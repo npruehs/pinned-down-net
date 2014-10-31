@@ -27,7 +27,7 @@ Entity CardSetPremiere::CreateCard(int cardIndex)
 		card = this->cardFactory->CreateEffect(this->GetSetIndex(), 48);
 		this->cardFactory->SetAffiliation(card, Affiliation::BlueWing);
 		this->cardFactory->SetThreat(card, 0);
-		this->cardFactory->AddPower(card, 2);
+		this->cardFactory->AddBonusPower(card, 2);
 		this->cardFactory->AddConditionalPower(card, 4);
 		this->cardFactory->AddConditionNotDamaged(card);
 		break;

@@ -135,11 +135,11 @@ void CardFactory::SetFlagship(Entity entity)
 	this->game->entityManager->AddComponent(entity, flagshipComponent);
 }
 
-void CardFactory::AddPower(Entity entity, int power)
+void CardFactory::AddBonusPower(Entity entity, int power)
 {
 	auto powerComponent = std::make_shared<PowerComponent>();
 	this->game->entityManager->AddComponent(entity, powerComponent);
-	powerComponent->power = power;
+	powerComponent->bonusPowerUntilEndOfTurn = power;
 }
 
 void CardFactory::SetPower(Entity entity, int power)
