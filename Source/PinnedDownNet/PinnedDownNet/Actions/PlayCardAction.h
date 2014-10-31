@@ -24,14 +24,16 @@ namespace PinnedDownNet
 			}
 
 			Entity cardToPlay;
+			Entity targetCard;
 
-			explicit PlayCardAction() : PlayCardAction(INVALID_ENTITY_ID)
+			explicit PlayCardAction() : PlayCardAction(INVALID_ENTITY_ID, INVALID_ENTITY_ID)
 			{
 			}
 
-			explicit PlayCardAction(Entity cardToPlay)
+			explicit PlayCardAction(Entity cardToPlay, Entity targetCard)
 			{
 				this->cardToPlay = cardToPlay;
+				this->targetCard = targetCard;
 			}
 
 			void Serialize(std::ostrstream& out);
