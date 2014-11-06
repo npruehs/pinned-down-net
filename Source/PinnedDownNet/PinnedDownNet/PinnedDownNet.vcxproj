@@ -107,6 +107,7 @@
     <ClInclude Include="Events\CardCreatedEvent.h" />
     <ClInclude Include="Events\CardRemovedEvent.h" />
     <ClInclude Include="Events\CardStateChangedEvent.h" />
+    <ClInclude Include="Events\CardUnassignedEvent.h" />
     <ClInclude Include="Events\CoveredDistanceChangedEvent.h" />
     <ClInclude Include="Events\DefeatEvent.h" />
     <ClInclude Include="Events\ErrorMessageEvent.h" />
@@ -144,6 +145,7 @@
     <ClCompile Include="Events\CardCreatedEvent.cpp" />
     <ClCompile Include="Events\CardRemovedEvent.cpp" />
     <ClCompile Include="Events\CardStateChangedEvent.cpp" />
+    <ClCompile Include="Events\CardUnassignedEvent.cpp" />
     <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp" />
     <ClCompile Include="Events\DefeatEvent.cpp" />
     <ClCompile Include="Events\ErrorMessageEvent.cpp" />

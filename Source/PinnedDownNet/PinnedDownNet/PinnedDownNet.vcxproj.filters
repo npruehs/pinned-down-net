@@ -134,6 +134,9 @@
     <ClInclude Include="Events\PowerChangedEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
+    <ClInclude Include="Events\CardUnassignedEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -234,6 +237,9 @@
       <Filter>Components</Filter>
     </ClCompile>
     <ClCompile Include="Events\PowerChangedEvent.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\CardUnassignedEvent.cpp">
       <Filter>Events</Filter>
     </ClCompile>
   </ItemGroup>
