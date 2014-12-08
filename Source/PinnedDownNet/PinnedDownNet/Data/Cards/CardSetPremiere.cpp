@@ -94,7 +94,7 @@ Entity CardSetPremiere::CreateCard(int cardIndex)
 		// Blue Wing - London.
 		card = this->cardFactory->CreateStarship(this->GetSetIndex(), 55);
 		this->cardFactory->SetAffiliation(card, Affiliation::BlueWing);
-		this->cardFactory->SetPower(card, 3);
+		this->cardFactory->SetPower(card, 7);
 		this->cardFactory->SetThreat(card, 3);
 		break;
 
