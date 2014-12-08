@@ -116,6 +116,7 @@
     <ClInclude Include="Events\PlayerAddedEvent.h" />
     <ClInclude Include="Events\PowerChangedEvent.h" />
     <ClInclude Include="Events\ShipDamagedEvent.h" />
+    <ClInclude Include="Events\StructureChangedEvent.h" />
     <ClInclude Include="Events\ThreatChangedEvent.h" />
     <ClInclude Include="Events\TurnPhaseChangedEvent.h" />
     <ClInclude Include="Events\VictoryEvent.h" />
@@ -154,6 +155,7 @@
     <ClCompile Include="Events\PlayerAddedEvent.cpp" />
     <ClCompile Include="Events\PowerChangedEvent.cpp" />
     <ClCompile Include="Events\ShipDamagedEvent.cpp" />
+    <ClCompile Include="Events\StructureChangedEvent.cpp" />
     <ClCompile Include="Events\ThreatChangedEvent.cpp" />
     <ClCompile Include="Events\TurnPhaseChangedEvent.cpp" />
     <ClCompile Include="Events\VictoryEvent.cpp" />
