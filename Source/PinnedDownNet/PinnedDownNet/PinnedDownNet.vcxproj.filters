@@ -140,6 +140,9 @@
     <ClInclude Include="Events\StructureChangedEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
+    <ClInclude Include="Events\CardPlayedEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -246,6 +249,9 @@
       <Filter>Events</Filter>
     </ClCompile>
     <ClCompile Include="Events\StructureChangedEvent.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\CardPlayedEvent.cpp">
       <Filter>Events</Filter>
     </ClCompile>
   </ItemGroup>

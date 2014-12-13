@@ -105,6 +105,7 @@
     <ClInclude Include="Data\TurnPhase.h" />
     <ClInclude Include="Events\CardAssignedEvent.h" />
     <ClInclude Include="Events\CardCreatedEvent.h" />
+    <ClInclude Include="Events\CardPlayedEvent.h" />
     <ClInclude Include="Events\CardRemovedEvent.h" />
     <ClInclude Include="Events\CardStateChangedEvent.h" />
     <ClInclude Include="Events\CardUnassignedEvent.h" />
@@ -144,6 +145,7 @@
     <ClCompile Include="Data\PlayerFactory.cpp" />
     <ClCompile Include="Events\CardAssignedEvent.cpp" />
     <ClCompile Include="Events\CardCreatedEvent.cpp" />
+    <ClCompile Include="Events\CardPlayedEvent.cpp" />
     <ClCompile Include="Events\CardRemovedEvent.cpp" />
     <ClCompile Include="Events\CardStateChangedEvent.cpp" />
     <ClCompile Include="Events\CardUnassignedEvent.cpp" />
