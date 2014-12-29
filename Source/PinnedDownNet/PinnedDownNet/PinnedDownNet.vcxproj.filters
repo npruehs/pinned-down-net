@@ -140,9 +140,8 @@
     <ClInclude Include="Events\StructureChangedEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
-    <ClInclude Include="Events\CardPlayedEvent.h">
-      <Filter>Events</Filter>
-    </ClInclude>
+    <ClInclude Include="Events\StarshipPlayedEvent.h" />
+    <ClInclude Include="Events\EffectPlayedEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -251,8 +250,7 @@
     <ClCompile Include="Events\StructureChangedEvent.cpp">
       <Filter>Events</Filter>
     </ClCompile>
-    <ClCompile Include="Events\CardPlayedEvent.cpp">
-      <Filter>Events</Filter>
-    </ClCompile>
+    <ClCompile Include="Events\StarshipPlayedEvent.cpp" />
+    <ClCompile Include="Events\EffectPlayedEvent.cpp" />
   </ItemGroup>
 </Project>
