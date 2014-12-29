@@ -31,8 +31,8 @@ namespace PinnedDownNet
 			}
 
 			explicit ErrorMessageEvent(std::string errorMessage)
+				: errorMessage(errorMessage)
 			{
-				this->errorMessage = errorMessage;
 			}
 
 			void Serialize(std::ostrstream& out);

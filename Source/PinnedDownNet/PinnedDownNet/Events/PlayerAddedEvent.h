@@ -32,10 +32,10 @@ namespace PinnedDownNet
 			}
 
 			explicit PlayerAddedEvent(Entity serverEntity, int clientId, std::string playerName)
+				: serverEntity(serverEntity),
+				clientId(clientId),
+				playerName(playerName)
 			{
-				this->serverEntity = serverEntity;
-				this->clientId = clientId;
-				this->playerName = playerName;
 			}
 
 			void Serialize(std::ostrstream& out);
