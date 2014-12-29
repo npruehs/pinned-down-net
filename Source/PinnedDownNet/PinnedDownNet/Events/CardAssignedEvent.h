@@ -38,6 +38,11 @@ namespace PinnedDownNet
 
 			void Serialize(std::ostrstream& out);
 			void Deserialize(std::istrstream& in);
+
+			std::wstring ToString()
+			{
+				return std::wstring(L"Card " + std::to_wstring(this->assignedCard) + L" assigned to card " + std::to_wstring(this->targetCard));
+			}
 		};
 	}
 }

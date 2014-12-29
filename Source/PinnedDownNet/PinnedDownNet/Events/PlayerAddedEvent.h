@@ -40,6 +40,12 @@ namespace PinnedDownNet
 
 			void Serialize(std::ostrstream& out);
 			void Deserialize(std::istrstream& in);
+
+			std::wstring ToString()
+			{
+				std::wstring playerNameW(playerName.begin(), playerName.end());
+				return std::wstring(L"Player entity " + std::to_wstring(this->serverEntity) + L" added for client " + std::to_wstring(this->clientId) + L" with name " + playerNameW);
+			}
 		};
 	}
 }

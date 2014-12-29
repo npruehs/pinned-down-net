@@ -37,6 +37,12 @@ namespace PinnedDownNet
 
 			void Serialize(std::ostrstream& out);
 			void Deserialize(std::istrstream& in);
+
+			std::wstring ToString()
+			{
+				std::wstring errorMessageW(errorMessage.begin(), errorMessage.end());
+				return std::wstring(L"Error: " + errorMessageW);
+			}
 		};
 	}
 }

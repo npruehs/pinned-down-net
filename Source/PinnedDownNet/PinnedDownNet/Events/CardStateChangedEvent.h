@@ -41,6 +41,14 @@ namespace PinnedDownNet
 
 			void Serialize(std::ostrstream& out);
 			void Deserialize(std::istrstream& in);
+
+			std::wstring ToString()
+			{
+				std::string newStateString = CardStateToString(this->newState);
+				std::wstring newStateWString(newStateString.begin(), newStateString.end());
+
+				return std::wstring(L"Card " + std::to_wstring(this->serverEntity) + L" changed state to " + newStateWString);
+			}
 		};
 	}
 }

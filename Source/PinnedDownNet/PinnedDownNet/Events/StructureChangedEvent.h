@@ -38,6 +38,11 @@ namespace PinnedDownNet
 
 			void Serialize(std::ostrstream& out);
 			void Deserialize(std::istrstream& in);
+
+			std::wstring ToString()
+			{
+				return std::wstring(L"Structure of entity " + std::to_wstring(this->entity) + L" changed to " + std::to_wstring(this->newStructure));
+			}
 		};
 	}
 }
