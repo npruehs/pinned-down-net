@@ -142,6 +142,7 @@
     </ClInclude>
     <ClInclude Include="Events\StarshipPlayedEvent.h" />
     <ClInclude Include="Events\EffectPlayedEvent.h" />
+    <ClInclude Include="Data\FightOutcome.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />

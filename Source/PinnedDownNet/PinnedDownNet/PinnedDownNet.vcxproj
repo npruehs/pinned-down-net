@@ -101,6 +101,7 @@
     <ClInclude Include="Data\CardState.h" />
     <ClInclude Include="Data\Cards\CardSetPremiere.h" />
     <ClInclude Include="Data\CardType.h" />
+    <ClInclude Include="Data\FightOutcome.h" />
     <ClInclude Include="Data\PlayerFactory.h" />
     <ClInclude Include="Data\TurnPhase.h" />
     <ClInclude Include="Events\CardAssignedEvent.h" />
