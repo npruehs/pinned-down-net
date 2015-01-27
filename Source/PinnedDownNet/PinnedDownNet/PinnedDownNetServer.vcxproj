@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2C645185-98F4-4398-9CF2-319CF875E6D1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PinnedDownNet</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\Bin\$(Configuration)\$(MSBuildProjectName)\</OutDir>
+    <IntDir>..\..\..\Obj\$(Configuration)\$(MSBuildProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\Bin\$(Configuration)\$(MSBuildProjectName)\</OutDir>
+    <IntDir>..\..\..\Obj\$(Configuration)\$(MSBuildProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\pinned-down-core\Source\PinnedDownCore\PinnedDownCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\pinned-down-core\Source\PinnedDownCore\PinnedDownCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Actions\AssignCardAction.h" />
+    <ClInclude Include="Actions\EndTurnAction.h" />
+    <ClInclude Include="Actions\PlayCardAction.h" />
+    <ClInclude Include="Actions\ResolveFightAction.h" />
+    <ClInclude Include="Components\AffiliationComponent.h" />
+    <ClInclude Include="Components\CardComponent.h" />
+    <ClInclude Include="Components\CardStateComponent.h" />
+    <ClInclude Include="Components\ConditionalPowerComponent.h" />
+    <ClInclude Include="Components\ConditionNotDamagedComponent.h" />
+    <ClInclude Include="Components\FlagshipComponent.h" />
+    <ClInclude Include="Components\OwnerComponent.h" />
+    <ClInclude Include="Components\PlayerComponent.h" />
+    <ClInclude Include="Components\PowerComponent.h" />
+    <ClInclude Include="Components\StructureComponent.h" />
+    <ClInclude Include="Components\ThreatComponent.h" />
+    <ClInclude Include="Data\Affiliation.h" />
+    <ClInclude Include="Data\CardFactory.h" />
+    <ClInclude Include="Data\CardSet.h" />
+    <ClInclude Include="Data\CardState.h" />
+    <ClInclude Include="Data\Cards\CardSetPremiere.h" />
+    <ClInclude Include="Data\CardType.h" />
+    <ClInclude Include="Data\FightOutcome.h" />
+    <ClInclude Include="Data\PlayerFactory.h" />
+    <ClInclude Include="Data\TurnPhase.h" />
+    <ClInclude Include="Events\CardAssignedEvent.h" />
+    <ClInclude Include="Events\CardCreatedEvent.h" />
+    <ClInclude Include="Events\CardRemovedEvent.h" />
+    <ClInclude Include="Events\CardStateChangedEvent.h" />
+    <ClInclude Include="Events\CardUnassignedEvent.h" />
+    <ClInclude Include="Events\CoveredDistanceChangedEvent.h" />
+    <ClInclude Include="Events\DefeatEvent.h" />
+    <ClInclude Include="Events\EffectPlayedEvent.h" />
+    <ClInclude Include="Events\ErrorMessageEvent.h" />
+    <ClInclude Include="Events\FightResolvedEvent.h" />
+    <ClInclude Include="Events\LoginSuccessEvent.h" />
+    <ClInclude Include="Events\PlayerAddedEvent.h" />
+    <ClInclude Include="Events\PowerChangedEvent.h" />
+    <ClInclude Include="Events\ShipDamagedEvent.h" />
+    <ClInclude Include="Events\StarshipPlayedEvent.h" />
+    <ClInclude Include="Events\StructureChangedEvent.h" />
+    <ClInclude Include="Events\ThreatChangedEvent.h" />
+    <ClInclude Include="Events\TurnPhaseChangedEvent.h" />
+    <ClInclude Include="Events\VictoryEvent.h" />
+    <ClInclude Include="PinnedDownAzure.h" />
+    <ClInclude Include="PinnedDownNet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Actions\AssignCardAction.cpp" />
+    <ClCompile Include="Actions\EndTurnAction.cpp" />
+    <ClCompile Include="Actions\PlayCardAction.cpp" />
+    <ClCompile Include="Actions\ResolveFightAction.cpp" />
+    <ClCompile Include="Components\AffiliationComponent.cpp" />
+    <ClCompile Include="Components\CardComponent.cpp" />
+    <ClCompile Include="Components\CardStateComponent.cpp" />
+    <ClCompile Include="Components\ConditionalPowerComponent.cpp" />
+    <ClCompile Include="Components\ConditionNotDamagedComponent.cpp" />
+    <ClCompile Include="Components\FlagshipComponent.cpp" />
+    <ClCompile Include="Components\OwnerComponent.cpp" />
+    <ClCompile Include="Components\PlayerComponent.cpp" />
+    <ClCompile Include="Components\PowerComponent.cpp" />
+    <ClCompile Include="Components\StructureComponent.cpp" />
+    <ClCompile Include="Components\ThreatComponent.cpp" />
+    <ClCompile Include="Data\CardFactory.cpp" />
+    <ClCompile Include="Data\Cards\CardSetPremiere.cpp" />
+    <ClCompile Include="Data\PlayerFactory.cpp" />
+    <ClCompile Include="Events\CardAssignedEvent.cpp" />
+    <ClCompile Include="Events\CardCreatedEvent.cpp" />
+    <ClCompile Include="Events\CardRemovedEvent.cpp" />
+    <ClCompile Include="Events\CardStateChangedEvent.cpp" />
+    <ClCompile Include="Events\CardUnassignedEvent.cpp" />
+    <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp" />
+    <ClCompile Include="Events\DefeatEvent.cpp" />
+    <ClCompile Include="Events\EffectPlayedEvent.cpp" />
+    <ClCompile Include="Events\ErrorMessageEvent.cpp" />
+    <ClCompile Include="Events\FightResolvedEvent.cpp" />
+    <ClCompile Include="Events\LoginSuccessEvent.cpp" />
+    <ClCompile Include="Events\PlayerAddedEvent.cpp" />
+    <ClCompile Include="Events\PowerChangedEvent.cpp" />
+    <ClCompile Include="Events\ShipDamagedEvent.cpp" />
+    <ClCompile Include="Events\StarshipPlayedEvent.cpp" />
+    <ClCompile Include="Events\StructureChangedEvent.cpp" />
+    <ClCompile Include="Events\ThreatChangedEvent.cpp" />
+    <ClCompile Include="Events\TurnPhaseChangedEvent.cpp" />
+    <ClCompile Include="Events\VictoryEvent.cpp" />
+    <ClCompile Include="PinnedDownNet.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\pinned-down-core\Source\PinnedDownCore\PinnedDownCore\PinnedDownCore.vcxproj">
+      <Project>{51037f52-f903-4bb2-90cd-70b5bde869de}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
