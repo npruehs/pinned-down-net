@@ -143,6 +143,7 @@
     <ClInclude Include="Events\StarshipPlayedEvent.h" />
     <ClInclude Include="Events\EffectPlayedEvent.h" />
     <ClInclude Include="Data\FightOutcome.h" />
+    <ClInclude Include="Actions\DisconnectClientAction.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
@@ -253,5 +254,6 @@
     </ClCompile>
     <ClCompile Include="Events\StarshipPlayedEvent.cpp" />
     <ClCompile Include="Events\EffectPlayedEvent.cpp" />
+    <ClCompile Include="Actions\DisconnectClientAction.cpp" />
   </ItemGroup>
 </Project>
