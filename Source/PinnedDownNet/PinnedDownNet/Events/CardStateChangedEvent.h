@@ -39,10 +39,10 @@ namespace PinnedDownNet
 				this->newState = newState;
 			}
 
-			void Serialize(std::ostrstream& out);
+			void Serialize(std::ostrstream& out) const;
 			void Deserialize(std::istrstream& in);
 
-			std::wstring ToString()
+			std::wstring ToString() const
 			{
 				std::string newStateString = CardStateToString(this->newState);
 				std::wstring newStateWString(newStateString.begin(), newStateString.end());

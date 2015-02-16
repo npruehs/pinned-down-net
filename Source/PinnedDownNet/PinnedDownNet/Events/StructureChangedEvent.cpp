@@ -4,7 +4,7 @@ using namespace PinnedDownNet::Events;
 
 const HashedString StructureChangedEvent::StructureChangedEventType = HashedString("StructureChanged");
 
-void StructureChangedEvent::Serialize(std::ostrstream& out)
+void StructureChangedEvent::Serialize(std::ostrstream& out) const
 {
 	out << this->entity << " ";
 	out << this->newStructure << " ";

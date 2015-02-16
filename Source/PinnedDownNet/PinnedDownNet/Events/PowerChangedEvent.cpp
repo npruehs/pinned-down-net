@@ -4,7 +4,7 @@ using namespace PinnedDownNet::Events;
 
 const HashedString PowerChangedEvent::PowerChangedEventType = HashedString("PowerChanged");
 
-void PowerChangedEvent::Serialize(std::ostrstream& out)
+void PowerChangedEvent::Serialize(std::ostrstream& out) const
 {
 	out << this->entity << " ";
 	out << this->newPower << " ";

@@ -4,7 +4,7 @@ using namespace PinnedDownNet::Events;
 
 const HashedString LoginSuccessEvent::LoginSuccessEventType = HashedString("LoginSuccess");
 
-void LoginSuccessEvent::Serialize(std::ostrstream& out)
+void LoginSuccessEvent::Serialize(std::ostrstream& out) const
 {
 	out << this->clientId << " ";
 }

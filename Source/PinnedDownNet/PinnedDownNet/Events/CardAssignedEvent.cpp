@@ -4,7 +4,7 @@ using namespace PinnedDownNet::Events;
 
 const HashedString CardAssignedEvent::CardAssignedEventType = HashedString("CardAssigned");
 
-void CardAssignedEvent::Serialize(std::ostrstream& out)
+void CardAssignedEvent::Serialize(std::ostrstream& out) const
 {
 	out << this->assignedCard << " ";
 	out << this->targetCard << " ";

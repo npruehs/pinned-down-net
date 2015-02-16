@@ -4,7 +4,7 @@ using namespace PinnedDownNet::Events;
 
 const HashedString CardRemovedEvent::CardRemovedEventType = HashedString("CardRemoved");
 
-void CardRemovedEvent::Serialize(std::ostrstream& out)
+void CardRemovedEvent::Serialize(std::ostrstream& out) const
 {
 	out << this->serverEntity << " ";
 }

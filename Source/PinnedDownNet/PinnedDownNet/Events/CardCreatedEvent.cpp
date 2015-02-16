@@ -4,7 +4,7 @@ using namespace PinnedDownNet::Events;
 
 const HashedString CardCreatedEvent::CardCreatedEventType = HashedString("CardCreated");
 
-void CardCreatedEvent::Serialize(std::ostrstream& out)
+void CardCreatedEvent::Serialize(std::ostrstream& out) const
 {
 	out << this->serverEntity << " ";
 	out << this->owner << " ";

@@ -4,7 +4,7 @@ using namespace PinnedDownNet::Events;
 
 const HashedString PlayerAddedEvent::PlayerAddedEventType = HashedString("PlayerAdded");
 
-void PlayerAddedEvent::Serialize(std::ostrstream& out)
+void PlayerAddedEvent::Serialize(std::ostrstream& out) const
 {
 	out << this->serverEntity << " ";
 	out << this->clientId << " ";

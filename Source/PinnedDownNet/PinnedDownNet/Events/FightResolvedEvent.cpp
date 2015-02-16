@@ -4,7 +4,7 @@ using namespace PinnedDownNet::Events;
 
 const HashedString FightResolvedEvent::FightResolvedEventType = HashedString("FightResolved");
 
-void FightResolvedEvent::Serialize(std::ostrstream& out)
+void FightResolvedEvent::Serialize(std::ostrstream& out) const
 {
 	out << this->assignedCard << " ";
 	out << (int)this->fightOutcome << " ";

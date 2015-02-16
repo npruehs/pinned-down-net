@@ -4,7 +4,7 @@ using namespace PinnedDownNet::Events;
 
 const HashedString ShipDamagedEvent::ShipDamagedEventType = HashedString("ShipDamaged");
 
-void ShipDamagedEvent::Serialize(std::ostrstream& out)
+void ShipDamagedEvent::Serialize(std::ostrstream& out) const
 {
 	out << this->damagedShip << " ";
 	out << this->damageCard << " ";

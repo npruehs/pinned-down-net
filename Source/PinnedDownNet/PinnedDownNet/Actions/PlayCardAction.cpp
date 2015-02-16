@@ -4,7 +4,7 @@ using namespace PinnedDownNet::Events;
 
 const HashedString PlayCardAction::PlayCardActionType = HashedString("PlayCard");
 
-void PlayCardAction::Serialize(std::ostrstream& out)
+void PlayCardAction::Serialize(std::ostrstream& out) const
 {
 	out << this->cardToPlay << " ";
 	out << this->targetCard << " ";

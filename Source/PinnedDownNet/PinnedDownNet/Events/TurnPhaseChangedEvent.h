@@ -35,10 +35,10 @@ namespace PinnedDownNet
 				this->newTurnPhase = newTurnPhase;
 			}
 
-			void Serialize(std::ostrstream& out);
+			void Serialize(std::ostrstream& out) const;
 			void Deserialize(std::istrstream& in);
 
-			std::wstring ToString()
+			std::wstring ToString() const
 			{
 				std::string turnPhase = TurnPhaseToString(this->newTurnPhase);
 				std::wstring turnPhaseW(turnPhase.begin(), turnPhase.end());

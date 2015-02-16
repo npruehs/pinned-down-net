@@ -4,7 +4,7 @@ using namespace PinnedDownNet::Events;
 
 const HashedString CoveredDistanceChangedEvent::CoveredDistanceChangedEventType = HashedString("CoveredDistanceChanged");
 
-void CoveredDistanceChangedEvent::Serialize(std::ostrstream& out)
+void CoveredDistanceChangedEvent::Serialize(std::ostrstream& out) const
 {
 	out << this->distanceCovered << " ";
 	out << this->distanceMaximum << " ";

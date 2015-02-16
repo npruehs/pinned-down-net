@@ -39,10 +39,10 @@ namespace PinnedDownNet
 				this->fightOutcome = fightOutcome;
 			}
 
-			void Serialize(std::ostrstream& out);
+			void Serialize(std::ostrstream& out) const;
 			void Deserialize(std::istrstream& in);
 
-			std::wstring ToString()
+			std::wstring ToString() const
 			{
 				std::string outcome = FightOutcomeToString(this->fightOutcome);
 				std::wstring outcomeW(outcome.begin(), outcome.end());

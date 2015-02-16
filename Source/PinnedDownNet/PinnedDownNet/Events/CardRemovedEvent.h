@@ -34,10 +34,10 @@ namespace PinnedDownNet
 				this->serverEntity = serverEntity;
 			}
 
-			void Serialize(std::ostrstream& out);
+			void Serialize(std::ostrstream& out) const;
 			void Deserialize(std::istrstream& in);
 
-			std::wstring ToString()
+			std::wstring ToString() const
 			{
 				return std::wstring(L"Card removed: " + std::to_wstring(this->serverEntity));
 			}
