@@ -26,3 +26,7 @@ Source/PinnedDownNet/PinnedDownNet/PinnedDownNet.vcxproj.user
 Obj/
 Source/PinnedDownNet/PinnedDownNet/PinnedDownAzure.h
 Source/PinnedDownNet/PinnedDownNet/PinnedDownNetServer.vcxproj.user
+Source/PinnedDownNet/PinnedDownNet/PinnedDownNetClient.vcxproj.user
+
+# Windows Runtime
+*.pri
