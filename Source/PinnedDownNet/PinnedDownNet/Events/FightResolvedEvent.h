@@ -42,12 +42,11 @@ namespace PinnedDownNet
 			void Serialize(std::ostrstream& out) const;
 			void Deserialize(std::istrstream& in);
 
-			std::wstring ToString() const
+			std::string ToString() const
 			{
 				std::string outcome = FightOutcomeToString(this->fightOutcome);
-				std::wstring outcomeW(outcome.begin(), outcome.end());
 
-				return std::wstring(L"Fight resolved: " + std::to_wstring(this->assignedCard) + L" (" + outcomeW + L")");
+				return std::string("Fight resolved: " + std::to_string(this->assignedCard) + " (" + outcome + ")");
 			}
 		};
 	}

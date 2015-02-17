@@ -38,9 +38,9 @@ namespace PinnedDownNet
 			void Serialize(std::ostrstream& out) const;
 			void Deserialize(std::istrstream& in);
 
-			std::wstring ToString() const
+			std::string ToString() const
 			{
-				return std::wstring(L"Covered distance changed: " + std::to_wstring(this->distanceCovered) + L"/" + std::to_wstring(this->distanceMaximum));
+				return std::string("Covered distance changed: " + std::to_string(this->distanceCovered) + "/" + std::to_string(this->distanceMaximum));
 			}
 		};
 	}

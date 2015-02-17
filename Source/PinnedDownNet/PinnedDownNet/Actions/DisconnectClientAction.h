@@ -26,9 +26,9 @@ namespace PinnedDownNet
 			void Serialize(std::ostrstream& out) const;
 			void Deserialize(std::istrstream& in);
 
-			std::wstring ToString() const
+			std::string ToString() const
 			{
-				return std::wstring(L"Disconnect client");
+				return std::string("Disconnect client");
 			}
 		};
 	}

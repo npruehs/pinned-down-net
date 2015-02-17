@@ -36,9 +36,9 @@ namespace PinnedDownNet
 			void Serialize(std::ostrstream& out) const;
 			void Deserialize(std::istrstream& in);
 
-			std::wstring ToString() const
+			std::string ToString() const
 			{
-				return std::wstring(L"Client logged in: " + std::to_wstring(this->clientId));
+				return std::string("Client logged in: " + std::to_string(this->clientId));
 			}
 		};
 	}

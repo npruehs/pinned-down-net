@@ -36,9 +36,9 @@ namespace PinnedDownNet
 			void Serialize(std::ostrstream& out) const;
 			void Deserialize(std::istrstream& in);
 
-			std::wstring ToString() const
+			std::string ToString() const
 			{
-				return std::wstring(L"Threat changed: " + std::to_wstring(this->newThreat));
+				return std::string("Threat changed: " + std::to_string(this->newThreat));
 			}
 		};
 	}

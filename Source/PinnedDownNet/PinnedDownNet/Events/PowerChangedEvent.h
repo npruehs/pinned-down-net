@@ -39,9 +39,9 @@ namespace PinnedDownNet
 			void Serialize(std::ostrstream& out) const;
 			void Deserialize(std::istrstream& in);
 			
-			std::wstring ToString() const
+			std::string ToString() const
 			{
-				return std::wstring(L"Power of entity " + std::to_wstring(this->entity) + L" changed to " + std::to_wstring(this->newPower));
+				return std::string("Power of entity " + std::to_string(this->entity) + " changed to " + std::to_string(this->newPower));
 			}
 		};
 	}

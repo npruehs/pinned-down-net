@@ -37,9 +37,9 @@ namespace PinnedDownNet
 			void Serialize(std::ostrstream& out) const;
 			void Deserialize(std::istrstream& in);
 
-			std::wstring ToString() const
+			std::string ToString() const
 			{
-				return std::wstring(L"Card removed: " + std::to_wstring(this->serverEntity));
+				return std::string("Card removed: " + std::to_string(this->serverEntity));
 			}
 		};
 	}
