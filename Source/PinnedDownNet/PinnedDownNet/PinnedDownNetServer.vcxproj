@@ -116,6 +116,7 @@
     <ClInclude Include="Events\EffectPlayedEvent.h" />
     <ClInclude Include="Events\ErrorMessageEvent.h" />
     <ClInclude Include="Events\FightResolvedEvent.h" />
+    <ClInclude Include="Events\GameStartedEvent.h" />
     <ClInclude Include="Events\LoginSuccessEvent.h" />
     <ClInclude Include="Events\PlayerAddedEvent.h" />
     <ClInclude Include="Events\PowerChangedEvent.h" />
@@ -158,6 +159,7 @@
     <ClCompile Include="Events\EffectPlayedEvent.cpp" />
     <ClCompile Include="Events\ErrorMessageEvent.cpp" />
     <ClCompile Include="Events\FightResolvedEvent.cpp" />
+    <ClCompile Include="Events\GameStartedEvent.cpp" />
     <ClCompile Include="Events\LoginSuccessEvent.cpp" />
     <ClCompile Include="Events\PlayerAddedEvent.cpp" />
     <ClCompile Include="Events\PowerChangedEvent.cpp" />
