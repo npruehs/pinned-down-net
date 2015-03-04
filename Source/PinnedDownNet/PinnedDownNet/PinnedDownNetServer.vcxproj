@@ -83,8 +83,8 @@
   <ItemGroup>
     <ClInclude Include="Actions\AssignCardAction.h" />
     <ClInclude Include="Actions\DisconnectClientAction.h" />
-    <ClInclude Include="Actions\EndTurnAction.h" />
     <ClInclude Include="Actions\PlayCardAction.h" />
+    <ClInclude Include="Actions\PlayerReadyAction.h" />
     <ClInclude Include="Actions\ResolveFightAction.h" />
     <ClInclude Include="Components\AffiliationComponent.h" />
     <ClInclude Include="Components\CardComponent.h" />
@@ -133,8 +133,8 @@
   <ItemGroup>
     <ClCompile Include="Actions\AssignCardAction.cpp" />
     <ClCompile Include="Actions\DisconnectClientAction.cpp" />
-    <ClCompile Include="Actions\EndTurnAction.cpp" />
     <ClCompile Include="Actions\PlayCardAction.cpp" />
+    <ClCompile Include="Actions\PlayerReadyAction.cpp" />
     <ClCompile Include="Actions\ResolveFightAction.cpp" />
     <ClCompile Include="Components\AffiliationComponent.cpp" />
     <ClCompile Include="Components\CardComponent.cpp" />
