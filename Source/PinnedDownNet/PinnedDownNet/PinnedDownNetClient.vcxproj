@@ -65,6 +65,7 @@
     <ClInclude Include="Events\GameStartedEvent.h" />
     <ClInclude Include="Events\LoginSuccessEvent.h" />
     <ClInclude Include="Events\PlayerAddedEvent.h" />
+    <ClInclude Include="Events\PlayerReadyStateResetEvent.h" />
     <ClInclude Include="Events\PowerChangedEvent.h" />
     <ClInclude Include="Events\ShipDamagedEvent.h" />
     <ClInclude Include="Events\StarshipPlayedEvent.h" />
@@ -108,6 +109,7 @@
     <ClCompile Include="Events\GameStartedEvent.cpp" />
     <ClCompile Include="Events\LoginSuccessEvent.cpp" />
     <ClCompile Include="Events\PlayerAddedEvent.cpp" />
+    <ClCompile Include="Events\PlayerReadyStateResetEvent.cpp" />
     <ClCompile Include="Events\PowerChangedEvent.cpp" />
     <ClCompile Include="Events\ShipDamagedEvent.cpp" />
     <ClCompile Include="Events\StarshipPlayedEvent.cpp" />
