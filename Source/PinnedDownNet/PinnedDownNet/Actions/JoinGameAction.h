@@ -8,18 +8,18 @@ namespace PinnedDownNet
 {
 	namespace Events
 	{
-		struct ClientVersionVerifiedEvent : public PinnedDownCore::Event
+		struct JoinGameAction : public PinnedDownCore::Event
 		{
-			static const HashedString ClientVersionVerifiedEventType;
+			static const HashedString JoinGameActionType;
 
 			const HashedString & GetEventType() const
 			{
-				return ClientVersionVerifiedEventType;
+				return JoinGameActionType;
 			}
 
 			const NetRole GetNetRole() const
 			{
-				return NetRole::Client;
+				return NetRole::Server;
 			}
 		};
 	}

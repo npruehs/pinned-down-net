@@ -8,13 +8,13 @@ namespace PinnedDownNet
 {
 	namespace Events
 	{
-		struct ClientVersionVerifiedEvent : public PinnedDownCore::Event
+		struct ClientVersionNotVerifiedEvent : public PinnedDownCore::Event
 		{
-			static const HashedString ClientVersionVerifiedEventType;
+			static const HashedString ClientVersionNotVerifiedEventType;
 
 			const HashedString & GetEventType() const
 			{
-				return ClientVersionVerifiedEventType;
+				return ClientVersionNotVerifiedEventType;
 			}
 
 			const NetRole GetNetRole() const

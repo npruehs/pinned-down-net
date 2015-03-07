@@ -28,7 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actions\AssignCardAction.h" />
-    <ClInclude Include="Actions\DisconnectClientAction.h" />
+    <ClInclude Include="Actions\JoinGameAction.h" />
     <ClInclude Include="Actions\PlayerReadyAction.h" />
     <ClInclude Include="Actions\PlayCardAction.h" />
     <ClInclude Include="Actions\ResolveFightAction.h" />
@@ -58,6 +58,7 @@
     <ClInclude Include="Events\CardRemovedEvent.h" />
     <ClInclude Include="Events\CardStateChangedEvent.h" />
     <ClInclude Include="Events\CardUnassignedEvent.h" />
+    <ClInclude Include="Events\ClientVersionNotVerifiedEvent.h" />
     <ClInclude Include="Events\ClientVersionVerifiedEvent.h" />
     <ClInclude Include="Events\CoveredDistanceChangedEvent.h" />
     <ClInclude Include="Events\DefeatEvent.h" />
@@ -80,7 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Actions\AssignCardAction.cpp" />
-    <ClCompile Include="Actions\DisconnectClientAction.cpp" />
+    <ClCompile Include="Actions\JoinGameAction.cpp" />
     <ClCompile Include="Actions\PlayerReadyAction.cpp" />
     <ClCompile Include="Actions\PlayCardAction.cpp" />
     <ClCompile Include="Actions\ResolveFightAction.cpp" />
@@ -104,6 +105,7 @@
     <ClCompile Include="Events\CardRemovedEvent.cpp" />
     <ClCompile Include="Events\CardStateChangedEvent.cpp" />
     <ClCompile Include="Events\CardUnassignedEvent.cpp" />
+    <ClCompile Include="Events\ClientVersionNotVerifiedEventType.cpp" />
     <ClCompile Include="Events\ClientVersionVerifiedEvent.cpp" />
     <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp" />
     <ClCompile Include="Events\DefeatEvent.cpp" />
