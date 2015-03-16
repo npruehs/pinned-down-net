@@ -22,9 +22,6 @@
     <ClInclude Include="Events\LoginSuccessEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
-    <ClInclude Include="Actions\EndTurnAction.h">
-      <Filter>Actions</Filter>
-    </ClInclude>
     <ClInclude Include="Events\CoveredDistanceChangedEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
@@ -140,18 +137,29 @@
     <ClInclude Include="Events\StructureChangedEvent.h">
       <Filter>Events</Filter>
     </ClInclude>
-    <ClInclude Include="Events\StarshipPlayedEvent.h" />
-    <ClInclude Include="Events\EffectPlayedEvent.h" />
-    <ClInclude Include="Data\FightOutcome.h" />
-    <ClInclude Include="Actions\DisconnectClientAction.h" />
+    <ClInclude Include="Events\EffectPlayedEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Data\FightOutcome.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\JoinGameAction.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\VerifyClientVersionAction.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\StarshipPlayedEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\PlayerReadyAction.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PinnedDownNet.cpp" />
     <ClCompile Include="Events\LoginSuccessEvent.cpp">
       <Filter>Events</Filter>
-    </ClCompile>
-    <ClCompile Include="Actions\EndTurnAction.cpp">
-      <Filter>Actions</Filter>
     </ClCompile>
     <ClCompile Include="Events\CoveredDistanceChangedEvent.cpp">
       <Filter>Events</Filter>
@@ -252,8 +260,20 @@
     <ClCompile Include="Events\StructureChangedEvent.cpp">
       <Filter>Events</Filter>
     </ClCompile>
-    <ClCompile Include="Events\StarshipPlayedEvent.cpp" />
-    <ClCompile Include="Events\EffectPlayedEvent.cpp" />
-    <ClCompile Include="Actions\DisconnectClientAction.cpp" />
+    <ClCompile Include="Events\EffectPlayedEvent.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\JoinGameAction.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\VerifyClientVersionAction.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\StarshipPlayedEvent.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\PlayerReadyAction.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -67,16 +67,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\..\..\Bin\$(Configuration)\$(MSBuildProjectName)\</OutDir>
-    <IntDir>..\..\..\Obj\$(Configuration)\$(MSBuildProjectName)\</IntDir>
+    <OutDir>..\..\..\Bin\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
+    <IntDir>..\..\..\Obj\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>..\..\..\Bin\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
     <IntDir>..\..\..\Obj\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>..\..\..\Bin\$(Configuration)\$(MSBuildProjectName)\</OutDir>
-    <IntDir>..\..\..\Obj\$(Configuration)\$(MSBuildProjectName)\</IntDir>
+    <OutDir>..\..\..\Bin\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
+    <IntDir>..\..\..\Obj\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>..\..\..\Bin\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
@@ -150,10 +150,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Actions\AssignCardAction.h" />
-    <ClInclude Include="Actions\DisconnectClientAction.h" />
-    <ClInclude Include="Actions\EndTurnAction.h" />
+    <ClInclude Include="Actions\JoinGameAction.h" />
     <ClInclude Include="Actions\PlayCardAction.h" />
+    <ClInclude Include="Actions\PlayerReadyAction.h" />
     <ClInclude Include="Actions\ResolveFightAction.h" />
+    <ClInclude Include="Actions\VerifyClientVersionAction.h" />
     <ClInclude Include="Components\AffiliationComponent.h" />
     <ClInclude Include="Components\CardComponent.h" />
     <ClInclude Include="Components\CardStateComponent.h" />
@@ -198,10 +199,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Actions\AssignCardAction.cpp" />
-    <ClCompile Include="Actions\DisconnectClientAction.cpp" />
-    <ClCompile Include="Actions\EndTurnAction.cpp" />
+    <ClCompile Include="Actions\JoinGameAction.cpp" />
     <ClCompile Include="Actions\PlayCardAction.cpp" />
+    <ClCompile Include="Actions\PlayerReadyAction.cpp" />
     <ClCompile Include="Actions\ResolveFightAction.cpp" />
+    <ClCompile Include="Actions\VerifyClientVersionAction.cpp" />
     <ClCompile Include="Components\AffiliationComponent.cpp" />
     <ClCompile Include="Components\CardComponent.cpp" />
     <ClCompile Include="Components\CardStateComponent.cpp" />
